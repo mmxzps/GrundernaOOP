@@ -35,5 +35,18 @@ namespace GrundernaOOP
             //With this the result will be printed out when the method is called.
             // Console.WriteLine($"Arean för radien är : {area:0.##}");
         }
+        //A method for calculating the circumference
+        public double circleCircumf()
+        {
+            double pi = Math.PI;
+            return 2 * pi * radie;
+        }
+
+        //A method for calculating the volume
+        public double cirkelVolume()
+        {
+            double pi = Math.PI;
+            return (4 * pi * radie * radie * radie) / 3;
+        }
     }
 }
