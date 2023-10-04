@@ -4,8 +4,9 @@
     {
         static void Main(string[] args)
         {
-            //5.Here we create an object "circle1" with the value "circle constructor" and
-            //parameters 5 & 6.
+            //5.Here we create two object "circle1 & circle2" with
+            //the parameters(argument?) 5 & 6.
+
             Circle circle1 = new Circle(5);
             Circle circle2 = new Circle(6);
 
