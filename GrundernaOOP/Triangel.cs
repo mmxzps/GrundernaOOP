@@ -7,28 +7,35 @@ using System.Threading.Tasks;
 
 namespace GrundernaOOP
 {
+    //Creating "Triangel" class.
     internal class Triangel
     {
-        public double _height { get; set; }
-        public double _bottom { get; set; }
-        public double _hypotenusan { get; set; }
+        //Adding the fields for the Triangel.
+        private double _height;
+        private double _bottom;
+        private double _hypotenusan;
+
+        //Creating a constuctor with parameters.
         public Triangel(double height, double bottom, double hypotenusan) 
-        { 
-            this._height = height;
-            this._bottom = bottom;
-            this._hypotenusan = hypotenusan;
+        {   
+            //initializing parameters.
+            _height = height;
+            _bottom = bottom;
+            _hypotenusan = hypotenusan;
         }
+        //A method for calculatiing the volume.
         public double getVolume()
         {
 
             return (((_bottom * _height)/2) * _height)/3;
         }
 
+        //A method for calculatiing the area.
         public double getArea()
         {
             return (_bottom * _height)/2;
         }
-
+        //A method for calculatiing the circumference.
         public double getOmkrets()
         {
             return _bottom + _height + _hypotenusan;
